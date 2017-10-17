@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context="com.example.aluno.appgenerico.MainActivity">
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812"
+        app:layout_constraintHorizontal_bias="0.532" />
+
     <EditText
         android:id="@+id/senha"
         android:layout_width="wrap_content"
@@ -77,13 +93,11 @@
         android:layout_marginTop="8dp"
         android:text="Sobre"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintVertical_bias="0.81" />
 
     <Button
         android:id="@+id/c"
@@ -95,9 +109,9 @@
         android:layout_marginTop="8dp"
         android:text="Cadastro"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809" />
+        app:layout_constraintVertical_bias="0.812" />
 </android.support.constraint.ConstraintLayout>
