@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button c;
@@ -15,18 +16,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        c=(Button) findViewById(R.id.c);
-        s=(Button) findViewById(R.id.s);
         senha=(EditText) findViewById(R.id.senha) ;
         user=(EditText) findViewById(R.id.user);
+        c=(Button) findViewById(R.id.c);
+        s=(Button) findViewById(R.id.s);
         s.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity( new Intent( 
-                        MainActivity.this,
-                        sobre.class
-                ) );
+                MainActivity.this.startActivity(new Intent(MainActivity.this,SobreActivity.class));
             }
+        });
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    MainActivity.this.startActivity(new Intent(MainActivity.this,CadastroActivity.class));
+                }
+
         });
     }
 }
